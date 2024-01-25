@@ -1,0 +1,66 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Oct 25 18:11:54 2023
+| Host         : ECE-PHO115-110 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file full_device_methodology_drc_routed.rpt -pb full_device_methodology_drc_routed.pb -rpx full_device_methodology_drc_routed.rpx
+| Design       : full_device
+| Device       : xc7a100tcsg324-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 6
++-----------+----------+------------------------------+------------+
+| Rule      | Severity | Description                  | Violations |
++-----------+----------+------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert | 1          |
+| TIMING-20 | Warning  | Non-clocked latch            | 5          |
++-----------+----------+------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+LUTAR-1#1 Warning
+LUT drives async reset alert  
+LUT cell d1/Anode_Activate_reg[7]_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) d1/Anode_Activate_reg[7]/CLR, d1/Anode_Activate_reg[4]/PRE, d1/Anode_Activate_reg[5]/PRE, d1/Anode_Activate_reg[6]/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch d1/Anode_Activate_reg[4] cannot be properly analyzed as its control pin d1/Anode_Activate_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch d1/Anode_Activate_reg[5] cannot be properly analyzed as its control pin d1/Anode_Activate_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch d1/Anode_Activate_reg[6] cannot be properly analyzed as its control pin d1/Anode_Activate_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch d1/Anode_Activate_reg[7] cannot be properly analyzed as its control pin d1/Anode_Activate_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch d1/LED_BCD_reg[0] cannot be properly analyzed as its control pin d1/LED_BCD_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+

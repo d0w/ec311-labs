@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep 29 09:58:55 2023
+# Process ID: 15768
+# Current directory: X:/Documents/ec311/lab1/lab_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16232 X:\Documents\ec311\lab1\lab_1\lab_1.xpr
+# Log file: X:/Documents/ec311/lab1/lab_1/vivado.log
+# Journal file: X:/Documents/ec311/lab1/lab_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project X:/Documents/ec311/lab1/lab_1/lab_1.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source ALU_testbench.tcl
+close_sim
+launch_simulation
+source ALU_testbench.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top full_adder_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source full_adder_testbench.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ripple_adder_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+source ripple_adder_testbench.tcl
+update_compile_order -fileset sim_1
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ALU_testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source ALU_testbench.tcl
+close_sim
+launch_simulation
+source ALU_testbench.tcl
+close_sim
+launch_simulation
+source ALU_testbench.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {X:/Documents/ec311/lab1/lab_1/lab_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Documents/ec311/lab1/lab_1/lab_1.runs/impl_1/ALU.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

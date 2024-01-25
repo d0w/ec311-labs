@@ -1,0 +1,967 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 11 14:37:52 2023
+# Process ID: 9584
+# Current directory: X:/Documents/ec311/lab2/lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14412 X:\Documents\ec311\lab2\lab2\lab2.xpr
+# Log file: X:/Documents/ec311/lab2/lab2/vivado.log
+# Journal file: X:/Documents/ec311/lab2/lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project X:/Documents/ec311/lab2/lab2/lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+close [ open X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v w ]
+add_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v
+update_compile_order -fileset sources_1
+add_files -norecurse {X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/subtractor.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/half_adder.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/full_adder.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ripple_adder.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/ALU_testbench.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/ripple_adder_testbench.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/half_adder_testbench.v}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+add_files -fileset constrs_1 -norecurse X:/Documents/ec311/lab2/lab2/lab2.srcs/constrs_1/Nexys4DDR_Master.xdc
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/subtractor.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ripple_adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/full_adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/half_adder.v] -no_script -reset -force -quiet
+remove_files  {X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/subtractor.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ripple_adder.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/full_adder.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/half_adder.v}
+update_compile_order -fileset sources_1
+add_files -norecurse {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/ALU_testbench.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/half_adder_testbench.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/ripple_adder_testbench.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/ALU_testbench.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/half_adder_testbench.v X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/ripple_adder_testbench.v}
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v] -no_script -reset -force -quiet
+remove_files  X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v] -no_script -reset -force -quiet
+remove_files  {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v] -no_script -reset -force -quiet
+remove_files  {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v}
+add_files {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v] -no_script -reset -force -quiet
+remove_files  {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v] -no_script -reset -force -quiet
+remove_files  {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v}
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v] -no_script -reset -force -quiet
+remove_files  X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v
+export_ip_user_files -of_objects  [get_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v] -no_script -reset -force -quiet
+remove_files  X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v
+add_files {X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 {X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/full_adder_testbench.v X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/half_adder_testbench.v}
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mode' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:40]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.subtractor
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim/xsim.dir/ALU_testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 11 15:22:59 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 972.203 ; gain = 63.699
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mode' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:40]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.subtractor
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 985.590 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property -name {xsim.simulate.runtime} -value {50000ns} -objects [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mode' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:40]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:44]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mode' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:40]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.subtractor
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/subtractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module subtractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'mode' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:40]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.subtractor
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1049.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj ALU_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/half_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module half_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ripple_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+"xelab -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 28490c4b36fd47fabf2cd52347d79af3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_testbench_behav xil_defaultlib.ALU_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 3 for port 'a' [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:41]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.half_adder
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.ripple_adder
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ALU_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ALU_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'X:/Documents/ec311/lab2/lab2/lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "ALU_testbench_behav -key {Behavioral:sim_1:Functional:ALU_testbench} -tclbatch {ALU_testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+source ALU_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 50000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'ALU_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 50000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1049.602 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close [ open X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v w ]
+add_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v
+update_compile_order -fileset sources_1
+close [ open X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v w ]
+add_files X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v w ]
+add_files -fileset sim_1 X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+INFO: [Common 17-14] Message 'filemgmt 56-199' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ALU_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/full_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/carry_select_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab_1/lab_1.srcs/sim_1/new/full_adder_testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ALU.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/carry_select_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/decoder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/mux_2x1.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sources_1/new/ripple_adder.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [X:/Documents/ec311/lab2/lab2/lab2.srcs/sim_1/new/ripple_adder_testbench.v:]

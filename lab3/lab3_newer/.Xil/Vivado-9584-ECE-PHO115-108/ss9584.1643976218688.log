@@ -1,0 +1,15 @@
+srcscan starts
+INFO: analyzing module full_adder (VERI-9002)
+INFO: analyzing module half_adder (VERI-9002)
+INFO: analyzing module ripple_adder (VERI-9002)
+INFO: analyzing module ALU (VERI-9002)
+INFO: analyzing module subtractor (VERI-9002)
+INFO: analyzing module decoder (VERI-9002)
+INFO: analyzing module carry_select_adder (VERI-9002)
+INFO: analyzing module mux_2x1 (VERI-9002)
+INFO: analyzing module ALU_testbench (VERI-9002)
+INFO: analyzing module ripple_adder_testbench (VERI-9002)
+INFO: analyzing module full_adder_testbench (VERI-9002)
+INFO: analyzing module half_adder_testbench (VERI-9002)
+INFO: analyzing module carry_select_testbench (VERI-9002)
+srcscan exits with return value 0

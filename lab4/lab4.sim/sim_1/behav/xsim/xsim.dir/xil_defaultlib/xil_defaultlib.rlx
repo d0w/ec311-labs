@@ -1,0 +1,16 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+X:/Documents/ec311/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/RCA_32bit_tb.v,1701278355,verilog,,,,RCA_32bit_tb,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/hamming_memory_test.v,1701278355,verilog,,,,hamming_memory_test,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/mealy_FSM_tb.v,1701278355,verilog,,,,mealy_FSM_tb,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/moore_FSM_tb.v,1701278355,verilog,,,,moore_FSM_tb,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/RCA_Nbit.v,1701278355,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/RCA_verification.v,,RCA_Nbit,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/RCA_verification.v,1701278355,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/full_adder.v,,RCA_verification,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/full_adder.v,1701278355,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/half_adder.v,,full_adder,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/half_adder.v,1701278355,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/RCA_32bit_tb.v,,half_adder,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/hamming_memory.v,1701289874,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/hamming_memory_test.v,,hamming_memory,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/mealy_FSM.v,1701278355,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/mealy_FSM_tb.v,,mealy_FSM,,,,,,,,
+X:/Documents/ec311/lab4/lab4.srcs/sources_1/new/moore_FSM.v,1701288596,verilog,,X:/Documents/ec311/lab4/lab4.srcs/sim_1/new/moore_FSM_tb.v,,moore_FSM,,,,,,,,
