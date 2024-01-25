@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"ripple_adder_testbench_time_synth.v" \
-"../../../../../lab_1.srcs/sim_1/new/ripple_adder_testbench.v" \
-
-# Do not sort compile order
-nosort

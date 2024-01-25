@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab1/lab_1/lab_1.sim/sim_1/synth/timing/xsim/ripple_adder_testbench_time_synth.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ripple_adder
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "X:/Documents/ec311/lab1/lab_1/lab_1.srcs/sim_1/new/ripple_adder_testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ripple_adder_testbench

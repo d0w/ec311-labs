@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 10 15:11:31 2023
+# Process ID: 2296
+# Current directory: X:/Documents/ec311/final_proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17460 X:\Documents\ec311\final_proj\final_proj.xpr
+# Log file: X:/Documents/ec311/final_proj/vivado.log
+# Journal file: X:/Documents/ec311/final_proj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 10 15:11:44 2023...
